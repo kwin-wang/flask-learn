@@ -3,6 +3,7 @@ from flask.ext.mail import Message
 from config import config
 from . import mail
 
+
 def send_email(to, subject, template, config_name,  **kwargs):
     cfg = config.get(config_name)
     msg = Message(cfg.FLASKY_MAIL_SUBJECT_PREFIX + subject,
