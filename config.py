@@ -19,8 +19,8 @@ class DevelopmentConfig(Config):
     DEBUG = True
     MAIL_SERVER = 'smtp.qq.com'
     MAIL_PORT = 465
-    MAIL_USER_TLS = False
-    MAIL_USER_SSL = True
+    MAIL_USE_TLS = False
+    MAIL_USE_SSL = True
     MAIL_USERNAME = '1048575587@qq.com'
     MAIL_PASSWORD = 'kgqntddsvqbzbejd'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
